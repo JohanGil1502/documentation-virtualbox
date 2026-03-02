@@ -1,19 +1,34 @@
 <p align="center">
 
 ![VirtualBox](https://img.shields.io/badge/Oracle-VirtualBox-blue?logo=virtualbox)
-
-
+![Documentation](https://img.shields.io/badge/Documentation-Complete-green)
+![Status](https://img.shields.io/badge/Status-Academic_Project-orange)
 
 </p>
-# documentation-virtualbox
 
-##  Documentación completa
+<h1 align="center">Documentación de Oracle VirtualBox</h1>
 
- **Abrir aquí:**  
-## ➜ [ Ver documento completo](documento.md)
+<p align="center">
+Repositorio con la documentación sobre instalación, configuración y uso de VirtualBox.
+</p>
 
 ---
 
-## Autor
-- Johan Sebastian Gil Salamanca
-- Brayan Alejadnro Cifuentes Quiroga
+## Documentación completa
+
+<p align="center">
+
+### ➜ [ Ver documento completo](documento.md)
+
+</p>
+
+---
+
+##  Autores
+
+**Johan Sebastián Gil Salamanca**  
+**Brayan Alejandro Cifuentes Quiroga**
+
+ Universidad Pedagógica y Tecnológica de Colombia  
+ IaaS y Virtualización  
+ Tunja — 2026
