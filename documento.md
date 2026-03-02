@@ -263,6 +263,8 @@ varios procesos y componentes críticos:
 <img src="media/media/image18.png" width="500">
 </p>
 
+<p align="center"><em>Figura 1. Interfaz gráfica de usuario principal</em></p>
+
 > Es la interfaz gráfica de usuario (GUI) principal basada en el kit de
 > herramientas Qt. Es el componente más accesible para usuarios noveles,
 > permitiendo crear, configurar y gestionar máquinas virtuales de forma
@@ -558,7 +560,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image19.png" width="500">
 </p>
-
+<p align="center"><em>Figura 2. Sección “General” del panel de configuración</em></p>
 > Esta sección abarca la identidad y funciones de integración básica:
 
 - *Identidad:* Incluye el nombre de la VM (utilizado para guardar los
@@ -583,7 +585,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image20.png" width="500">
 </p>
-
+<p align="center"><em>Figura 3. Sección de “Sistema” del panel de configuración</em></p>
 > Define los recursos de hardware críticos asignados:
 
 - *Memoria RAM (Base Memory):* Cantidad de memoria física del anfitrión
@@ -607,7 +609,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image21.png" width="500">
 </p>
-
+<p align="center"><em>Figura 4.  Sección  de “Almacenamiento” del panel de configuración</em></p>
 > VirtualBox presenta controladores de almacenamiento virtuales que se
 > conectan a archivos de imagen en el host:
 
@@ -628,7 +630,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image22.png" width="500">
 </p>
-
+<p align="center"><em>Figura 5. Sección de “Pantalla” del panel del configuraciónl</em></p>
 - *Memoria de vídeo:* RAM asignada a la tarjeta gráfica virtual que
   determina la resolución y profundidad de color máximas.
 
@@ -683,10 +685,10 @@ de parámetros que definen su comportamiento y estado.
 
 - USB: 
   
-  <p align="center">
+<p align="center">
 <img src="media/media/image23.png" width="500">
 </p>
-
+<p align="center"><em>Figura 6. Sección “USB” del panel de configuración</em></p>
   Emula controladores USB 1.1 (OHCI), 2.0 (EHCI) y 3.0 (xHCI).
   Permite la conexión directa de dispositivos físicos del host al
   invitado mediante filtros de dispositivos (basados en ID de vendedor,
@@ -694,19 +696,20 @@ de parámetros que definen su comportamiento y estado.
 
 - Audio: 
   
-  <p align="center">
+<p align="center">
 <img src="media/media/image24.png" width="500">
 </p>
-
+<p align="center"><em>Figura 7. Sección “Audio” del panel de configuración</em></p>
   Emulación de tarjetas Intel AC\'97, Intel HD Audio o
   SoundBlaster 16, con capacidad de capturar entrada y salida del
   sistema anfitrión.
 
 - Puertos Serie: 
   
-  <p align="center">
+<p align="center">
 <img src="media/media/image25.png" width="500">
 </p>
+<p align="center"><em>Figura 8. Sección “Puerto serie” del panel de configuración</em></p>
 
   Soporta hasta cuatro puertos serie virtuales, que
   pueden redirigirse a puertos físicos del host, archivos raw, tuberías
@@ -714,10 +717,10 @@ de parámetros que definen su comportamiento y estado.
 
 - Carpetas Compartidas: 
   
-  <p align="center">
+<p align="center">
 <img src="media/media/image26.png" width="500">
 </p>
-
+<p align="center"><em>Figura 9. Sección “Carpetas compartidas” del panel de configuración</em></p>
   Facilitan el intercambio de archivos entre host
   y guest sin necesidad de configurar una red real, funcionando como una
   unidad de red virtual.
@@ -729,6 +732,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image27.png" width="500">
 </p>
+<p align="center"><em>Figura 10. Pestaña de “Adaptador 1” de la sección de “Red”</em></p>
 
 > Oracle VirtualBox tiene la capacidad de proporcionar hasta ocho
 > tarjetas de red PCI Ethernet virtuales para cada máquina virtual.
@@ -767,7 +771,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image28.png" width="500">
 </p>
-
+<p align="center"><em>Figura 11. Sección para seleccionar el tipo de red</em></p>
 ##### **3.3.2.1 NAT**
 
 > Es el modo por defecto cuando se crea una máquina virtual nueva.
@@ -869,7 +873,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image29.png" width="500">
 </p>
-
+<p align="center"><em>Figura 12. Apartado para seleccionar el modo de promiscuidad</em></p>
 > El modo promiscuo es una configuración que permite a una tarjeta de
 > red virtual recibir y procesar todo el tráfico que circula por la red,
 > incluso si no está destinado a su propia dirección MAC.
@@ -919,7 +923,7 @@ de parámetros que definen su comportamiento y estado.
 <p align="center">
 <img src="media/media/image30.png" width="500">
 </p>
-
+<p align="center"><em>Figura 13. Ventana para definir las reglas de reenvío de puertos</em></p>
 > Debido a que el modo NAT aísla a la máquina virtual en una red privada
 > invisible desde el exterior, el reenvío de puertos es el mecanismo
 > necesario para hacer que los servicios del invitado sean accesibles.
@@ -1121,7 +1125,7 @@ eligiendo \"Ejecutar como administrador\".
 <p align="center">
 <img src="media/media/image6.png" width="545">
 </p>
-
+<p align="center"><em>Figura 14. Sitio oficial de Oracle VirtualBox-Sección de descargas</em></p>
 **Pantalla de bienvenida y componentes**
 
 Al ejecutar el instalador, aparece la pantalla de bienvenida del
@@ -1137,7 +1141,7 @@ previamente).
 <p align="center">
 <img src="media/media/image14.png" width="394">
 </p>
-
+<p align="center"><em>Figura 15.Ventana de instalación de Oracle VirtualBox</em></p>
 
 **Ruta de instalación**
 
@@ -1165,7 +1169,7 @@ height="2.3489588801399823in"}
 <img src="media/media/image16.png" width="282">
 <img src="media/media/image9.png" width="282">
 </p>
-
+<p align="center"><em>Figura 16.Ventana de instalación y finalización de Oracle VirtualBox</em></p>
 **Consideración adicional: conflicto con Hyper-V**
 
 Un aspecto importante a tener en cuenta en Windows es que si el sistema
@@ -1200,6 +1204,7 @@ comando:
 <p align="center">
 <img src="media/media/image5.png" width="655">
 </p>
+<p align="center"><em>Figura 17.Instalación del dkms</em></p>
 
 **Método 1: Repositorio oficial de Oracle (recomendado)**
 
@@ -1216,9 +1221,8 @@ sudo gpg \--dearmor -o /usr/share/keyrings/oracle-virtualbox.gpg**
 <p align="center">
 <img src="media/media/image7.png" width="601">
 </p>
-
-***Terminal mostrando el proceso de instalación completado exitosamente
-con apt.***
+<p align="center"><em>Figura 18.Terminal mostrando el proceso de instalación de Oracle VirtualBox completado exitosamente
+con apt.</em></p>
 
 **Método 2: Paquete .deb descargado manualmente**
 
@@ -1231,7 +1235,7 @@ instala con:
 <p align="center">
 <img src="media/media/image8.png" width="461">
 </p>
-
+<p align="center"><em>Figura 19.Descarga w Instalación desde la pagina oficial de virtualbox /em></p>
 Una vez descargado se instala con **sudo dpkg -i
 virtualbox-7.1\_\*.deb**
 
@@ -1243,7 +1247,7 @@ quedó correctamente instalado ejecutando:
 <p align="center">
 <img src="media/media/image3.png" width="558">
 </p>
-
+<p align="center"><em>Figura 20.Verificacion desde consola de la instalación de Oracle VirtualBox /em></p>
 ### **4.4 Demostración: Creación de una VM paso a paso**
 
 Una vez instalado VirtualBox, el siguiente paso es crear una máquina
@@ -1261,7 +1265,7 @@ donde comienza la configuración.
 <p align="center">
 <img src="media/media/image17.png" width="466">
 </p>
-
+<p align="center"><em>Figura 21.Boton para crear una nueva VM en VirtualBox /em></p>
 #### **4.4.1 Modo guiado vs Modo experto**
 
 > **Modo guiado**
@@ -1285,6 +1289,7 @@ donde comienza la configuración.
 <p align="center">
 <img src="media/media/image2.png" width="404">
 </p>
+<p align="center"><em>Figura 22.Interfaz grafica para agregar el nombre y S.O de la VM /em></p>
 >
 > **Paso 2 --- Hardware:** Se define la cantidad de memoria RAM que se
 > asignará a la VM y el número de procesadores virtuales (vCPUs).
@@ -1296,6 +1301,8 @@ donde comienza la configuración.
 <p align="center">
 <img src="media/media/image4.png" width="405">
 </p>
+<p align="center"><em>Figura 23.Interfaz grafica para definir y configurar el hardware de la VM /em></p>
+
 >
 > **Paso 3 --- Disco duro virtual:** Se elige si se crea un disco
 > virtual nuevo, se usa uno existente, o simplemente no se agrega disco
@@ -1306,6 +1313,8 @@ donde comienza la configuración.
 <p align="center">
 <img src="media/media/image15.png" width="378">
 </p>
+<p align="center"><em>Figura 24.Interfaz grafica para configurar el tipo de disco duro virtual de la VM /em></p>
+
 >
 > **Paso 4 --- Resumen:** Antes de finalizar, el asistente muestra un
 > resumen completo de toda la configuración definida. Aquí se puede
@@ -1316,6 +1325,8 @@ donde comienza la configuración.
 <p align="center">
 <img src="media/media/image12.png" width="495">
 </p>
+<p align="center"><em>Figura 25.Interfaz grafica donde se evidencia el resumen para la creación de la VM /em></p>
+
 >
 > **Modo experto**
 >
@@ -1333,7 +1344,7 @@ donde comienza la configuración.
 <img src="media/media/image1.png" width="265">
 <img src="media/media/image10.png" width="265">
 </p>
-
+<p align="center"><em>Figura 26.Interfaz grafica creación de la VM en modo experto /em></p>
 **Resultado: la VM creada**
 
 Al finalizar el asistente, la nueva máquina virtual aparece listada en
@@ -1343,7 +1354,7 @@ visibles en el panel derecho.
 <p align="center">
 <img src="media/media/image13.png" width="601">
 </p>
-
+<p align="center"><em>Figura 27.Interfaz grafica evidencia de las diferentes VM creadas /em></p>
 ## **5. Comparación con otras soluciones de virtualización**
 
 ### **5.1 VirtualBox vs VMware Workstation**
@@ -1355,7 +1366,8 @@ administradores de sistemas y estudiantes que necesitan ejecutar
 máquinas virtuales sobre un sistema operativo anfitrión existente. Sin
 embargo, difieren considerablemente en aspectos clave como el
 rendimiento, el costo, la compatibilidad y el enfoque de uso.
-
+<p align="center"><em>Tabla1. Comparacion entre VirtualBox vs VMware Workstation/em></p>
+  
 | Aspecto | Descripción |
 |----------|-------------|
 | **Licenciamiento y costo** | Este es quizás el punto de diferencia más inmediato entre ambas herramientas. VirtualBox es una herramienta de código abierto bajo licencia GNU GPL v3, lo que permite utilizarla tanto en entornos personales como comerciales sin costo alguno. VMware Workstation Pro, por su parte, pasó por un cambio de modelo de licenciamiento importante: luego de que Broadcom adquiriera VMware, VMware Workstation Pro pasó a ser gratuito para uso personal. Sin embargo, para uso comercial se exige el pago de una suscripción anual aproximada de 120 dólares. En contraste, VirtualBox no tiene esta distinción y puede usarse libremente en cualquier contexto sin costo adicional, aunque su Extension Pack sí requiere licencia comercial para uso empresarial. |
@@ -1556,7 +1568,7 @@ La siguiente tabla resume los principales criterios de comparación entre
 Oracle VirtualBox, VMware Workstation, Hyper-V y KVM/QEMU. Las celdas
 resaltadas en verde corresponden a las ventajas destacadas de
 VirtualBox.
-
+<p align="center"><em>Tabla 2. Resumen comparacion entre diferentes soluciónes de virtualización/em></p>
 <p align="center">
 <img src="media/media/image11.png" width="675">
 </p>
