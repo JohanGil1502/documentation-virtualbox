@@ -18,7 +18,7 @@ Repositorio con la documentación sobre instalación, configuración y uso de Vi
 
 <p align="center">
 
-### ➜ [ Ver documento completo](documento.md)
+### ➜ [ Ver documento completo](Oracle%20VirtualBox%20Documentation.md)
 
 </p>
 
