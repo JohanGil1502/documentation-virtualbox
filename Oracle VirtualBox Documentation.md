@@ -19,155 +19,133 @@ Tunja<br>
 
 ---
 
-## **ÍNDICE**
+### **ÍNDICE**
 
+[**1. ¿Qué es Oracle VM VirtualBox?**](#1-qué-es-oracle-vm-virtualbox)
 
-[**1. ¿Qué es Oracle VM VirtualBox? 3**](#qué-es-oracle-vm-virtualbox)
+[**2. Fundamentos técnicos**](#2-fundamentos-técnicos)
 
-[**2. Fundamentos técnicos 3**](#fundamentos-técnicos)
+> [2.1 Arquitectura](#21-arquitectura)
+>
+> [2.2 Componentes](#22-componentes)
+>
+> [2.2.1 Host OS (Sistema operativo Anfitrión)](#221-host-os-sistema-operativo-anfitrión)
+>
+> [2.2.2 VirtualBox Manager](#222-virtualbox-manager)
+>
+> [2.2.3 VBoxManage](#223-vboxmanage)
+>
+> [2.2.4 Guest Additions](#224-guest-additions)
+>
+> [2.2.5 Extension Pack](#225-extension-pack)
+>
+> [2.3 Mecanismos](#23-mecanismos)
+>
+> [2.3.1 Virtualización asistida (Intel VT-x / AMD-V)](#231-virtualización-asistida-intel-vt-x--amd-v)
+>
+> [2.3.2 Virtualización de CPU, memoria, red y disco](#232-virtualización-de-cpu-memoria-red-y-disco)
+>
+> [2.3.3 Snapshot](#233-snapshot)
+>
+> [2.3.4 Controladores paravirtualizados](#234-controladores-paravirtualizados)
 
-> [2.1 Arquitectura 3](#arquitectura)
->
-> [2.2 Componentes 3](#componentes)
->
-> [2.2.1 Host OS (Sistema operativo Anfitrión)
-> 3](#host-os-sistema-operativo-anfitrión)
->
-> [2.2.2 VirtualBox Manager 4](#virtualbox-manager)
->
-> [2.2.3 VBoxManage 4](#vboxmanage)
->
-> [2.2.4 Guest Additions 4](#guest-additions)
->
-> [2.2.5 Extension Pack 5](#extension-pack)
->
-> [2.3 Mecanismos 5](#mecanismos)
->
-> [2.3.1 Virtualización asistida (Intel VT-x / AMD-V)
-> 5](#virtualización-asistida-intel-vt-x-amd-v)
->
-> [2.3.2 Virtualización de CPU, memoria, red y disco
-> 5](#virtualización-de-cpu-memoria-red-y-disco)
->
-> [2.3.3 Snapshot 6](#snapshot)
->
-> [2.3.4 Controladores paravirtualizados
-> 6](#controladores-paravirtualizados)
+[**3. Características y capacidades**](#3-características-y-capacidades)
 
-[**3. Características y capacidades 7**](#características-y-capacidades)
+> [3.1 Soporte de SO](#31-soporte-de-so)
+>
+> [3.2 Configuración básica de una VM](#32-configuración-básica-de-una-vm)
+>
+> [3.2.1 General](#321-general)
+>
+> [3.2.2 Sistema (CPU, RAM, Aceleración)](#322-sistema-cpu-ram-aceleración)
+>
+> [3.2.3 Almacenamiento](#323-almacenamiento)
+>
+> [3.2.4 Pantalla](#324-pantalla)
+>
+> [3.2.5 USB y dispositivos](#325-usb-y-dispositivos)
+>
+> [3.3 Configuración avanzada de una VM](#33-configuración-avanzada-de-una-vm)
+>
+> [3.3.1 Adaptadores virtuales (NIC)](#331-adaptadores-virtuales-nic)
+>
+> [3.3.2 Modos de red](#332-modos-de-red)
+>
+> [3.3.2.1 NAT](#3321-nat)
+>
+> [3.3.2.2 NAT Network](#3322-nat-network)
+>
+> [3.3.2.3 Adaptador puente (Bridged)](#3323-adaptador-puente-bridged)
+>
+> [3.3.2.4 Red interna](#3324-red-interna)
+>
+> [3.3.2.5 Host-Only](#3325-host-only)
+>
+> [3.3.3 Modo promiscuo](#333-modo-promiscuo)
+>
+> [3.3.4 Dirección MAC](#334-dirección-mac)
+>
+> [3.3.5 Port Forwarding](#335-port-forwarding)
+>
+> [3.4 Funcionalidades avanzadas](#34-funcionalidades-avanzadas)
+>
+> [3.4.1 Clones](#341-clones)
+>
+> [3.4.2 Shared Folders](#342-shared-folders)
+>
+> [3.4.3 Portapapeles compartido](#343-portapapeles-compartido)
+>
+> [3.4.4 Drag & Drop entre host y guest](#344-drag--drop-entre-host-y-guest)
+>
+> [3.5 Licencias y soporte](#35-licencias-y-soporte)
 
-> [3.1 Soporte de SO 7](#soporte-de-so)
->
-> [3.2 Configuración básica de una VM
-> 7](#configuración-básica-de-una-vm)
->
-> [3.2.1 General 7](#general)
->
-> [3.2.2 Sistema (CPU, RAM, Aceleración)
-> 8](#sistema-cpu-ram-aceleración)
->
-> [3.2.3 Almacenamiento 8](#almacenamiento)
->
-> [3.2.4 Pantalla 8](#pantalla)
->
-> [3.2.5 USB y dispositivos 9](#usb-y-dispositivos)
->
-> [3.3 Configuración avanzada de una VM
-> 9](#configuración-avanzada-de-una-vm)
->
-> [3.3.1 Adaptadores virtuales (NIC) 9](#adaptadores-virtuales-nic)
->
-> [3.3.2 Modos de red 10](#modos-de-red)
->
-> [3.3.2.1 NAT 10](#nat)
->
-> [3.3.2.2 NAT Network 11](#nat-network)
->
-> [3.3.2.3 Adaptador puente (Bridged) 11](#adaptador-puente-bridged)
->
-> [3.3.2.4 Red interna 11](#red-interna)
->
-> [3.3.2.5 Host-Only 12](#host-only)
->
-> [3.3.3 Modo promiscuo 12](#modo-promiscuo)
->
-> [3.3.4 Dirección MAC 12](#dirección-mac)
->
-> [3.3.5 Port Forwarding 13](#port-forwarding)
->
-> [3.4 Funcionalidades Avanzadas 13](#funcionalidades-avanzadas)
->
-> [3.4.1 Clones 13](#clones)
->
-> [3.4.2 Shared Folders 14](#shared-folders)
->
-> [3.4.3 Portapapeles compartido 14](#portapapeles-compartido)
->
-> [3.4.4 Drag & Drop entre host y guest
-> 14](#drag-drop-entre-host-y-guest)
->
-> [3.5 Licencias y soporte 14](#licencias-y-soporte)
+[**4. Instalación y demostración práctica**](#4-instalación-y-demostración-práctica)
 
-[**4. Instalación y demostración práctica
-15**](#instalación-y-demostración-práctica)
+> [4.1 Requisitos del sistema](#41-requisitos-del-sistema)
+>
+> [4.1.1 Requisitos de hardware](#411-requisitos-de-hardware)
+>
+> [4.1.2 Versión](#412-versión)
+>
+> [4.1.3 Sistemas host soportados](#413-sistemas-host-soportados)
+>
+> [4.2 Proceso de instalación en Windows](#42-proceso-de-instalación-en-windows)
+>
+> [4.3 Proceso de instalación en Linux](#43-proceso-de-instalación-en-linux)
+>
+> [4.4 Demostración: Creación de una VM paso a paso](#44-demostración-creación-de-una-vm-paso-a-paso)
+>
+> [4.4.1 Modo guiado vs Modo experto](#441-modo-guiado-vs-modo-experto)
 
-> [4.1. Requisitos del sistema 15](#requisitos-del-sistema)
->
-> [4.1.1 Requisitos de hardware 15](#requisitos-de-hardware)
->
-> [4.1.2 Versión 16](#versión)
->
-> [4.1.3 Sistemas host soportados 16](#sistemas-host-soportados)
->
-> [4.2 Proceso de instalación en Windows
-> 16](#proceso-de-instalación-en-windows)
->
-> [4.3 Proceso de instalación en Linux
-> 18](#proceso-de-instalación-en-linux)
->
-> [4.4 Demostración: Creación de una VM paso a paso
-> 21](#demostración-creación-de-una-vm-paso-a-paso)
->
-> [4.4.1 Modo guiado vs Modo experto 21](#modo-guiado-vs-modo-experto)
+[**5. Comparación con otras soluciones de virtualización**](#5-comparación-con-otras-soluciones-de-virtualización)
 
-[**5. Comparación con otras soluciones de virtualización
-24**](#comparación-con-otras-soluciones-de-virtualización)
+> [5.1 VirtualBox vs VMware Workstation](#51-virtualbox-vs-vmware-workstation)
+>
+> [5.2 VirtualBox vs Hyper-V (Microsoft)](#52-virtualbox-vs-hyper-v-microsoft)
+>
+> [5.3 VirtualBox vs KVM/QEMU](#53-virtualbox-vs-kvmqemu)
+>
+> [5.4 Tabla comparativa (resumen)](#54-tabla-comparativa-resumen)
 
-> [5.1 VirtualBox vs VMware Workstation
-> 24](#virtualbox-vs-vmware-workstation)
->
-> [5.2 VirtualBox vs Hyper-V (Microsoft)
-> 27](#virtualbox-vs-hyper-v-microsoft)
->
-> [5.3 VirtualBox vs KVM/QEMU 28](#virtualbox-vs-kvmqemu)
->
-> [5.4 Tabla comparativa (resumen) 30](#tabla-comparativa-resumen)
+[**6. Nube: integración con Oracle Cloud Infrastructure (OCI)**](#6-nube-integración-con-oracle-cloud-infrastructure-oci)
 
-[**6. Comparación con otras soluciones de virtualización
-31**](#comparación-con-otras-soluciones-de-virtualización-1)
+> [6.1 ¿Qué es Oracle Cloud Infrastructure (OCI)?](#61-qué-es-oracle-cloud-infrastructure-oci)
+>
+> [6.2 Integración de VirtualBox con Oracle Cloud Infrastructure](#62-integración-de-virtualbox-con-oracle-cloud-infrastructure)
+>
+> [6.3 OCI Compute](#63-oci-compute)
 
-> [6.1 ¿Qué es Oracle Cloud Infrastructure (OCI)?
-> 31](#qué-es-oracle-cloud-infrastructure-oci)
->
-> [6.2 Integración de VirtualBox con Oracle Cloud Infrastructure
-> 32](#integración-de-virtualbox-con-oracle-cloud-infrastructure)
->
-> [6.3 OCI Compute 34](#oci-compute)
+[**7. Casos de uso y escenarios reales**](#7-casos-de-uso-y-escenarios-reales)
 
-[**7. Casos de uso y escenarios reales
-35**](#casos-de-uso-y-escenarios-reales)
-
-> [7.1 Desarrollo y pruebas de software
-> 35](#desarrollo-y-pruebas-de-software)
+> [7.1 Desarrollo y pruebas de software](#71-desarrollo-y-pruebas-de-software)
 >
-> [7.2 Educación y aprendizaje 36](#educación-y-aprendizaje)
+> [7.2 Educación y aprendizaje](#72-educación-y-apendizaje)
 >
-> [7.3 Soporte técnico y recuperación
-> 36](#soporte-técnico-y-recuperación)
+> [7.3 Soporte técnico y recuperación](#73-soporte-técnico-y-recuperación)
 >
-> [7.4 Aplicaciones legadas 37](#aplicaciones-legadas)
+> [7.4 Aplicaciones legadas](#74-aplicaciones-legadas)
 >
-> [7.5 Migración a la nube 37](#migración-a-la-nube)
+> [7.5 Migración a la nube](#75-migración-a-la-nube)
 
 ## **1. ¿Qué es Oracle VM VirtualBox?**
 
@@ -1248,6 +1226,7 @@ quedó correctamente instalado ejecutando:
 <img src="media/media/image3.png" width="558">
 </p>
 <p align="center"><em>Figura 20.Verificacion desde consola de la instalación de Oracle VirtualBox /em></p>
+
 ### **4.4 Demostración: Creación de una VM paso a paso**
 
 Una vez instalado VirtualBox, el siguiente paso es crear una máquina
@@ -1266,6 +1245,7 @@ donde comienza la configuración.
 <img src="media/media/image17.png" width="466">
 </p>
 <p align="center"><em>Figura 21.Boton para crear una nueva VM en VirtualBox /em></p>
+
 #### **4.4.1 Modo guiado vs Modo experto**
 
 > **Modo guiado**
@@ -1355,6 +1335,7 @@ visibles en el panel derecho.
 <img src="media/media/image13.png" width="601">
 </p>
 <p align="center"><em>Figura 27.Interfaz grafica evidencia de las diferentes VM creadas /em></p>
+
 ## **5. Comparación con otras soluciones de virtualización**
 
 ### **5.1 VirtualBox vs VMware Workstation**
@@ -1582,7 +1563,7 @@ opción más sólida en entornos corporativos Windows, y KVM/QEMU lidera en
 rendimiento y flexibilidad dentro del ecosistema Linux, especialmente
 para usuarios avanzados.
 
-## **6. Comparación con otras soluciones de virtualización**
+## **6. Nube: integración con Oracle Cloud Infrastructure (OCI)**
 
 ### **6.1 ¿Qué es Oracle Cloud Infrastructure (OCI)?**
 
